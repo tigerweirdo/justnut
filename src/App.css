@@ -66,6 +66,7 @@
       outline: none;
       cursor: pointer;
   }
+
   
   .p__cormorant {
     font-family: var(--font-base);
@@ -95,7 +96,10 @@
   }
   
   .spoon__img {
-    width: 45px;
+    width: 30px;
+  }
+  .spoon__img path {
+    fill: var(--color-golden);
   }
   
   @media screen and (min-width: 2000px) {

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CustomButton from '../../constants/CustomButton/CustomButton';
 import SubHeading from '../SubHeading/SubHeading';
 import './Newsletter.css';
 
@@ -12,7 +12,7 @@ const Newsletter = () => (
     </div>
     <div className="app__newsletter-input flex__center">
       <input type="email" placeholder="Mail adresinizi giriniz" />
-      <button type="button" className="custom__button">Gönder</button>
+      <CustomButton link="#">Gönder</CustomButton>
     </div>
   </div>
 );
