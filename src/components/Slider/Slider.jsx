@@ -16,7 +16,7 @@ SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 function Slider() {
   return (
     <div className="container">
-      <h1 className="heading">Flower Gallery</h1>
+
       <Swiper
         effect={'coverflow'}
         grabCursor={true}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AboutUs, FindUs, Footer, Gallery, Header, Intro, SpecialMenu } from './container';
+import { AboutUs, FindUs, Footer, Gallery, Header, Intro, SpecialMenu, Footer2 } from './container';
 import { Navbar } from './components';
 import './App.css';
 
@@ -13,6 +13,7 @@ const App = () => (
     <Intro />
     <Gallery />
     <FindUs />
+    <Footer2/>
     <Footer />
   </div>
 );

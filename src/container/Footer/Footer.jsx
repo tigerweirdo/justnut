@@ -8,15 +8,12 @@ const Footer = () => (
   <div className="app__footer section__padding" id="login">
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
-        <h1 className="app__footer-headtext">Bize Ulaşın</h1>
+      <img src={images.Info} alt="footer_konum" />
         <p className="p__opensans">05412034766</p>
-        <p className="p__opensans">info@fıstıkezmecim.com</p>
-        <img src={images.Info} alt="footer_konum" />
+        <a href="mailto:info@fıstıkezmecim.com" className="p__opensans">info@fıstıkezmecim.com</a>
       </div>
 
       <div className="app__footer-links_logo">
-        <p className="p__opensans">&quot;Vücudunuzu sağlıklı tutun, ruhunuzun yaşayabileceği tek yer orasıdır.&quot;</p>
-        <img src={images.spoon} className="spoon__img" alt="footer_img" />
         <div className="app__footer-links_icons">
           <FiFacebook />
           <FiTwitter />
