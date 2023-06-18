@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { images } from '../../constants';
+/* import { images } from '../../constants'; */
 import './AboutUs.css';
 
 const AboutUs = () => {
