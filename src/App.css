@@ -8,7 +8,7 @@
 @media (max-width: 600px) {
   .bg {
     background-image: url('./assets/bg2.png');
-    background-size: 120cqi;
+    background-size: 200cqi;
       background-position: center center;
       background-repeat:repeat;
       background-attachment: scroll;
