@@ -22,7 +22,7 @@ const Footer = () => (
       </div>
 
       <div className="app__footer-links_work">
-        <img src={images.Logo} alt="footer_konum" />
+        <img src={images.Logo2} alt="footer_konum" />
       </div>
     </div>
 

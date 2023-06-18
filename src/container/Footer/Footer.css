@@ -29,6 +29,9 @@
     margin: 1rem;
     text-align: center;
 }
+.app__footer-links_contact p{
+    margin-bottom: 3px;
+}
 
 .app__footer-links_logo img:first-child {
     width: 100px;
@@ -39,7 +42,7 @@
     width: 150px;
 }
 .app__footer-links_contact img{
-    width: 30px;
+    width: 60px;
 }
 
 .app__footer-links_work p:nth-child(2n + 1) {
@@ -92,7 +95,7 @@
     .app__footer-links_contact,
     .app__footer-links_logo,
     .app__footer-links_work {
-        margin: 2rem 0;
+        margin: 4rem 1;
         width: 100%;
     }
 }

@@ -1,5 +1,3 @@
-
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -23,8 +21,6 @@ html {
   }
 }
 
-
-
 body {
   font-size: 1.6rem;
   background: var(--bg);
@@ -35,15 +31,17 @@ body {
   margin: 0 auto;
 }
 
-
 .swiper_container {
-    overflow: hidden; /* Dışarı taşan içeriği gizle */
-  }
+  overflow: hidden; /* Dışarı taşan içeriği gizle */
+}
 
 .swiper-slide {
   width: 37rem;
   height: 42rem;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 500px) {
