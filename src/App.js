@@ -11,11 +11,7 @@ const Home = () => (
   <>
     <Header />
     <AboutUs />
-   
-   
-    <Gallery />
     <FindUs />
-    <Footer2/>
     <Spacer/>
   </>
 );
