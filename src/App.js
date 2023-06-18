@@ -10,8 +10,7 @@ import './App.css';
 const Home = () => (
   <>
     <Header />
-    <AboutUs />
-    <FindUs />
+  
     <Spacer/>
   </>
 );
