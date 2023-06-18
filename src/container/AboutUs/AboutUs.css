@@ -7,12 +7,16 @@
     inset: 0;
 }
 
-.app__aboutus-overlay img {
+/*  .app__aboutus-overlay img {
+        
     z-index: 0;
-    opacity: 0.4;  /* Bu görüntüyü yarı saydam yapar */
-    width: 7cm;
-}
-
+    opacity: 0.4; 
+    position:absolute;
+    top: 3rem;
+    left: 19px;
+    
+} 
+ */
 .app__aboutus-content {
     width: 100%;
     z-index: 2;
