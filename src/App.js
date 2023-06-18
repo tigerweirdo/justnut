@@ -11,7 +11,7 @@ const Home = () => (
   <>
     <Header />
     <AboutUs />
-    <SpecialMenu />
+   
     <Intro />
     <Gallery />
     <FindUs />
