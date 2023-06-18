@@ -10,7 +10,12 @@ import './App.css';
 const Home = () => (
   <>
     <Header />
-  
+    <AboutUs />
+    <SpecialMenu />
+    <Intro />
+    <Gallery />
+    <FindUs />
+    <Footer2/>
     <Spacer/>
   </>
 );
