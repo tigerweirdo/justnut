@@ -99,11 +99,19 @@ body {
 }
 
 /* Mobil için */
+/* Mobil için */
 @media (max-width: 500px) {
-  .slider-controler .swiper-button-next {
-    left: 80% !important;
-    transform: translateX(-80%) !important;
+  .swiper-slide {
+    width: 100% !important;  /* Slaytların genişliğini tam ekran yapar */
+    height: auto !important; /* Slaytların yüksekliğini otomatik olarak ayarlar */
   }
+
+
+.swiper-slide img {
+  width: 100%;  /* Slaytların genişliğini tam ekran yapar */
+  height: auto; /* Slaytların yüksekliğini otomatik olarak ayarlar */
+}
+
   .slider-controler .swiper-button-prev {
     left: 20% !important;
     transform: translateX(-20%) !important;

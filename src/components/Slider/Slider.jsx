@@ -29,25 +29,26 @@ function Slider() {
   return (
     <div className="container">
 
-      <Swiper
-      ref={swiperRef} // Swiper referansını ekleyin
-        effect={'coverflow'}
-        grabCursor={false}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={0.8}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 50,
-          depth: 200,
-          modifier: 4.5,
-        }}
-        pagination={{ clickable: true }}
-        navigation={true}
-        preventClicks={false} // burayı ekledik
-  preventClicksPropagation={false} // burayı ekledik
-        className="swiper_container"
-      >
+<Swiper
+  ref={swiperRef}
+  effect={'coverflow'}
+  grabCursor={false}
+  centeredSlides={true}
+  loop={true}
+  slidesPerView={1}
+  coverflowEffect={{
+    rotate: 0,
+    stretch: 50,  // daha düşük bir değer
+    depth: 100,   // daha düşük bir değer
+    modifier: 1,  // daha düşük bir değer
+    slideShadows: false,  // daha düşük bir değer
+  }}
+  pagination={{ clickable: true }}
+  navigation={true}
+  preventClicks={true}
+  preventClicksPropagation={true}
+  className="swiper_container"
+>
         <SwiperSlide onClick={() => handleClick(0)}>
           <img src={slide_image_1} alt="slide_image" />
         </SwiperSlide>
