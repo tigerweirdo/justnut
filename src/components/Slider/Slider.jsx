@@ -22,7 +22,7 @@ function Slider() {
 
       <Swiper
         effect={'coverflow'}
-        grabCursor={true}
+        grabCursor={false}
         centeredSlides={true}
         loop={true}
         slidesPerView={2}
