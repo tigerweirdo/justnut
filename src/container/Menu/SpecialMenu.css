@@ -8,65 +8,7 @@
     text-align: center;
 }
 
-.app__specialMenu-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-x: auto; /* scroll only appears when necessary */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-    
-}
-.app__specialMenu-menu {
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-    width: 100vw; /* Set width to 100% of the viewport width */
-    /* Other styles... */
-}
 
-.app__specialMenu-menu::-webkit-scrollbar {
-    display: none; /* Chrome, Safari and Opera */
-}
-
-.menu-item {
-    flex: 0 0 auto; /* This will prevent the items from shrinking and force the container to overflow when necessary */
-    margin-right: 1em; /* optional, for some space between items */
-    /* rest of your styles... */
-}
-
-.app__specialMenu-menu_heading {
-    font-family: var(--font-base);
-    font-weight: 600;
-    font-size: 45px;
-    line-height: 58.5px;
-    letter-spacing: 0.04em;
-    color: var(--color-white);
-}
-
-.app__specialMenu-menu_wine,
-.app__specialMenu-menu_cocktails {
-    flex: 1;
-    width: 100%;
-    flex-direction: column;
-}
-
-.app__specialMenu-menu_img {
-    width: 410px;
-    margin: 0 2rem;
-}
-
-.app__specialMenu-menu_img img {
-    width: 100%;
-    height: auto;
-}
-
-.app__specialMenu_menu_items {
-    display: flex;
-    flex-direction: column;
-
-    margin: 2rem 0;
-    width: 100%;
-}
 
 @media screen and (min-width: 2000px) {
     .app__specialMenu-menu_img {
