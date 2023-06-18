@@ -4,9 +4,8 @@
     justify-content: space-between;
     align-items: center;
     background: var(--color-black);
-    margin-bottom: -70px;
 
-
+    padding: 1rem 2rem;
 }
 
 .app__navbar-logo {
@@ -29,13 +28,50 @@
 }
 
 .app__navbar-links li {
-    margin: 0 1rem;
-    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 25px;
+    position: relative;
+  }
+    
+  .app__navbar-links a{
+    text-decoration: none;
+  color: rgba(255,255,255,1);
+  position: relative;
+  padding: 16px 7px;
+  border-top: 2px solid rgba(255,255,255,0);
+  border-bottom: 2px solid rgba(255,255,255,0);
+  transition: padding .3s,border-color .3s;
 }
+.app__navbar-links a:focus,  .app__navbar-links a:hover {
+    padding: 5px 7px;
+    border-color: rgba(27,136,173,255);
+    outline: none;
+}
+.app__navbar-links a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 0;
+    color: rgba(255,255,255,0);
+    border-left: 2px solid rgba(27,136,173,255);
+    border-right: 2px solid rgba(27,136,173,255);
+    content: attr(data-text);
+    transition: max-height .3s,border-color 0s;
+  }
+  ​
+  .app__navbar-links .app__navbar-links a:focus::before, .app__navbar-links a:hover::before, .app__navbar-links a:focus::after, .app__navbar-links a:hover::after {
+    max-height: 100%;
+    transition-delay: .28s;
+    border-color: rgba(27,136,173,255);
+  }
 
 .app__navbar-links li:hover {
-    color: var(--color-grey);
+    background-size: 0 3px, 100% 3px;
 }
+
 
 .app__navbar-login {
     display: flex;
@@ -46,11 +82,16 @@
 .app__navbar-login a {
     margin: 0 1rem;
     text-decoration: none;
-    transition: .5s ease;
+    box-shadow: inset 0 0 0 0 #1b88ad;
+    color: #54b3d6;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .app__navbar-login a:hover {
-    border-bottom: 1px solid var(--color-golden);
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #1b88ad;;
 }
 
 .app__navbar-login div {

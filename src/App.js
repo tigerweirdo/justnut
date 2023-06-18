@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { AboutUs, FindUs, Footer, Gallery, Header, Intro, SpecialMenu, Footer2 } from './container';
+import { AboutUs, FindUs, Footer, Gallery, Header, Intro, SpecialMenu, Footer2, Spacer } from './container';
 import { Navbar } from './components';
 import './App.css';
 
 const App = () => (
-  <div>
+  <div className='bg'>
     <Navbar />
     <Header />
     <AboutUs />
@@ -14,6 +14,7 @@ const App = () => (
     <Gallery />
     <FindUs />
     <Footer2/>
+    <Spacer/>
     <Footer />
   </div>
 );

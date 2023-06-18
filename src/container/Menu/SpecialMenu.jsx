@@ -14,7 +14,6 @@ const SpecialMenu = () => {
       <Slider />
 
       <div style={{ marginTop: 15 }}>
-        <button type="button" className="custom__button">View More</button>
       </div>
     </div>
    

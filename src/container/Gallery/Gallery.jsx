@@ -28,7 +28,7 @@ const Gallery = () => {
         <SubHeading title=" " />
         <h1 className="headtext__cormorant">Bizi İnstagramdan takip edin!</h1>
         <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Sipariş vermek ve yeni ürünlerimizi görmek için Instagram hesabımızı takip etmeyi unutmayın.</p>
-        <button type="button" className="custom__button" onClick={handleClick}>View More</button>
+        <button type="button" className="custom__button stripe" onClick={handleClick}>Instagram</button>
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>

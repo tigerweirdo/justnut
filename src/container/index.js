@@ -6,6 +6,7 @@ import Gallery from './Gallery/Gallery';
 import Header from './Header/Header';
 import Intro from './Intro/Intro';
 import SpecialMenu from './Menu/SpecialMenu';
+import Spacer from './Spacer/spacer';
 
 export {
   AboutUs,
@@ -16,4 +17,5 @@ export {
   Intro,
   SpecialMenu,
   Footer2,
+  Spacer
 };

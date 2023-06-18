@@ -7,7 +7,9 @@ const AboutUs = () => {
 
   const extraContent = <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>;
 
-  const linkName = showMore ? 'Daha Az Göster' : 'Daha Fazla Göster';
+  const handleButtonClick = () => {
+    setShowMore(!showMore);
+  };
 
   return (
     <div className="app__aboutus app__bg flex__center section__padding" id="about">
@@ -21,7 +23,7 @@ const AboutUs = () => {
           <img src={images.spoon} alt="about_spoon" className="spoon__img" />
           <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
           {showMore && extraContent}
-          <button onClick={() => setShowMore(!showMore)}>{linkName}</button>
+          <button className="custom-button1" onClick={handleButtonClick}>{showMore ? "Gizle" : "Devam"}</button>
         </div>
       </div>
     </div>
@@ -29,3 +31,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+

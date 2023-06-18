@@ -3,6 +3,7 @@ import { Newsletter } from '../../components';
 
 
 
+
 const Footer2 = () => (
   <div className="app__footer2" id="login">
     <Newsletter/>
