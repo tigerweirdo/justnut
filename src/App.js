@@ -9,7 +9,6 @@ import './App.css';
 // Create a new component for the Home page
 const Home = () => (
   <>
-    <Header />
     <AboutUs />
     <SpecialMenu />
     <Intro />
@@ -17,7 +16,6 @@ const Home = () => (
     <FindUs />
     <Footer2/>
     <Spacer/>
-    <Footer />
   </>
 );
 
