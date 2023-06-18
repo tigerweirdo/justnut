@@ -8,9 +8,9 @@
 @media (max-width: 600px) {
   .bg {
     background-image: url('./assets/bg2.png');
-    background-size: 200cqi;
+    background-size: 95rem;
       background-position: center center;
-      background-repeat:repeat;
+      background-repeat:initial;
       background-attachment: scroll;
   }
 }
