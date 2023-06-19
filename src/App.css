@@ -7,7 +7,7 @@
 
 @media (max-width: 600px) {
   .bg {
-    background-image: url('./assets/bg2.png');
+    background-image: url('./assets/bg.svg');
     background-size: 95rem;
       background-position: center center;
       background-repeat:initial;
