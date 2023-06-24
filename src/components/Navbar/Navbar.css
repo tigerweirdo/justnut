@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     background: var(--color-black);
+    overflow-x: hidden;
 
     padding: 1rem 2rem;
 }

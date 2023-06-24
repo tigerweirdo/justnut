@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images';
 import './Navbar.css';
+import Animation from '../animation/animation';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
@@ -11,6 +12,8 @@ const Navbar = () => {
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         <img src={images.Logo} alt="header_img" />
+       
+
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans"><Link to="/">Anasayfa</Link></li>
@@ -29,14 +32,18 @@ const Navbar = () => {
             <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
             <ul className="app__navbar-smallscreen_links">
               <li><Link to="/" onClick={() => setToggleMenu(false)}>Home</Link></li>
-              <li><Link to="/" onClick={() => setToggleMenu(false)}>About</Link></li>
+              <li><Link to="/#about" onClick={() => setToggleMenu(false)}>About</Link></li>
               <li><Link to="/products" onClick={() => setToggleMenu(false)}>Menu</Link></li>
-              <li><Link to="/contact" onClick={() => setToggleMenu(false)}>Contact</Link></li>
+              <li><Link to="/#contact" onClick={() => setToggleMenu(false)}>Contact</Link></li>
             </ul>
           </div>
+          
         )}
       </div>
+    <div className='animation-container'><Animation/></div>
+      
     </nav>
+    
   );
 };
 

@@ -28,6 +28,8 @@
     flex: 1;
     margin: 1rem;
     text-align: center;
+
+   
 }
 .app__footer-links_contact p{
     margin-bottom: 3px;
@@ -39,7 +41,10 @@
 }
 
 .app__footer-links_work img {
-    width: 150px;
+    width: 20%;
+    margin-top:30px
+    
+    
 }
 .app__footer-links_contact img{
     width: 60px;
@@ -58,6 +63,8 @@
     margin: 0.5rem;
     font-size: 24px;
     cursor: pointer;
+    align-items: center;
+
 }
 
 .app__footer-links_icons svg:hover {
@@ -87,7 +94,7 @@
     .app__footer-links_contact,
     .app__footer-links_logo,
     .app__footer-links_work {
-        margin: 4rem 1;
+        margin: 4rem 1rem;
         width: 100%;
     }
 }
@@ -97,10 +104,17 @@
     .app__footer {
         padding: 0 0 2rem 0;
     }
+    .app__footer-links_contact,
+.app__footer-links_logo,
+.app__footer-links_work {
+    flex: 1;
+    margin: 1rem;
+   align-items: center;
+}
 }
 
 @media screen and (max-width: 350px) {
     .app__footer-links_logo img:first-child {
-        width: 80%;
+        width: 60%;
     }
 }
