@@ -8,6 +8,7 @@ import spoon from '../assets/spoon.svg';
 import fistik from '../assets/fistik.png';
 import Logo from '../assets/Logo.png';
 import Logo2 from '../assets/Logo2.png';
+import logo3 from '../assets/logo3.png';
 import Info from '../assets/Info.png';
 
 const images = {
@@ -21,7 +22,8 @@ const images = {
   fistik,
   Logo,
   Info,
-  Logo2
+  Logo2,
+  logo3
 };
 
 export default images;

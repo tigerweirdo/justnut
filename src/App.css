@@ -120,8 +120,19 @@
     letter-spacing: 0.04em;
     line-height: 28px;
     font-size: 16px;
-    margin-bottom: 25px;
+    
   }
+  
+  .p__opensans2 {
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    font-size: 10px;
+    
+  }
+  
+
   
   .headtext__cormorant {
     font-family: var(--font-base);
