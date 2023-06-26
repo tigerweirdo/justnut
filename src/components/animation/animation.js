@@ -4,9 +4,10 @@ import Lottie from "lottie-react";
 import squirrel from "../../assets/squirrel.json"
 
 const Animation = () => {
-    const lottieSize = 250;
+    const lottieSize = window.innerWidth * 0.165; // Lottie animasyonunun genişliği ekran genişliğinin %20'si olacak.
     const [state, setState] = useState({position: -lottieSize, direction: 1, waiting: false});
-
+   
+    
     useEffect(() => {
         const interval = setInterval(() => {
             if(state.waiting) return;

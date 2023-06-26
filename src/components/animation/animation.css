@@ -5,11 +5,17 @@ body {
 .animation-container {
     position: absolute;
     left: 0;
-    top: 30px;
+    top: 20px;
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
 }
-.squirrel{
+.squirrel {
     width: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .squirrel {
+        width: 20%;
+    }
 }
