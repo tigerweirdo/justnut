@@ -4,7 +4,6 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images';
 import './Navbar.css';
-import Animation from '../animation/animation';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
@@ -40,7 +39,7 @@ const Navbar = () => {
           
         )}
       </div>
-    <div className='animation-container'><Animation/></div>
+  
       
     </nav>
     

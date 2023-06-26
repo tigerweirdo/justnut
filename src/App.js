@@ -2,7 +2,7 @@
   import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
   import { AboutUs, FindUs, Footer, Gallery, Header, Intro, SpecialMenu, Footer2, Spacer } from './container';
-  import { Navbar } from './components';
+  import { Navbar, Animations } from './components';
   import Products from './pages/products/products'; // components should be PascalCase
   import './App.css';
 
@@ -10,6 +10,7 @@
   const Home = () => (
     <>
       <Header />
+      <Animations/>
       <AboutUs />
       <SpecialMenu />
       <Intro />

@@ -4,23 +4,34 @@ import Lottie from "lottie-react";
 import squirrel from "../../assets/squirrel.json"
 
 const Animation = () => {
-    const lottieSize = window.innerWidth * 0.165; // Lottie animasyonunun genişliği ekran genişliğinin %20'si olacak.
-    const [state, setState] = useState({position: -lottieSize, direction: 1, waiting: false});
-   
-    
+    const initialSize = window.innerWidth * 0.2;
+    const [lottieSize, setLottieSize] = useState(initialSize);
+    const [state, setState] = useState({position: -initialSize, direction: 1, waiting: false});
+
+    const resizeListener = () => {
+        const newSize = window.innerWidth * 0.1;
+        setLottieSize(newSize);
+        setState(prevState => ({...prevState, position: -newSize}));
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', resizeListener);
+        return () => window.removeEventListener('resize', resizeListener);
+    }, []);
+
     useEffect(() => {
         const interval = setInterval(() => {
             if(state.waiting) return;
             let newPosition = state.position + state.direction * 1;
-            if (newPosition > window.innerWidth - lottieSize && state.direction === 1) {
+            if (newPosition > window.innerWidth - lottieSize/2 && state.direction === 1) { // lottieSize/2 ekledik
                 setState({...state, waiting: true});
                 setTimeout(() => {
-                    setState({position: window.innerWidth - lottieSize, direction: -1, waiting: false});
+                    setState({position: window.innerWidth - lottieSize/2, direction: -1, waiting: false}); // lottieSize/2 ekledik
                 }, Math.random() * 2000 + 1000);
-            } else if (newPosition < -lottieSize && state.direction === -1) {
+            } else if (newPosition < -lottieSize/2 && state.direction === -1) { // lottieSize/2 ekledik
                 setState({...state, waiting: true});
                 setTimeout(() => {
-                    setState({position: -lottieSize, direction: 1, waiting: false});
+                    setState({position: -lottieSize/2, direction: 1, waiting: false}); // lottieSize/2 ekledik
                 }, Math.random() * 2000 + 1000);
             } else {
                 setState({...state, position: newPosition});
@@ -29,7 +40,7 @@ const Animation = () => {
         return () => {
             clearInterval(interval);
         };
-    }, [state]);
+    }, [state, lottieSize]);
 
     return (
         <div className="animation-container">
@@ -38,10 +49,11 @@ const Animation = () => {
                 style={{ 
                     position: "absolute",
                     left: `${state.position}px`,
-                    transform: `scaleX(${state.direction})`
+                    transform: `scaleX(${state.direction})`,
+                    width: `${lottieSize}px` // pixel cinsinden belirtildi
                 }}
             >
-                <Lottie animationData={squirrel} />
+                <Lottie animationData={squirrel} style={{ width: '100%', height: 'auto' }} />
             </div>
         </div>
     );

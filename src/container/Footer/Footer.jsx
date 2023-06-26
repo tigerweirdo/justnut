@@ -1,9 +1,7 @@
 import React from 'react';
 import { FiFacebook, FiInstagram } from 'react-icons/fi';
-import Logo from '../../components/sign';
-
-import { images } from '../../constants';
 import './Footer.css';
+import { images } from '../../constants';
 
 const Footer = () => (
   <div className="footer">
@@ -14,15 +12,24 @@ const Footer = () => (
       </div>
       <p className="p__opensans">0541 203 47 66</p>
       <a href="mailto:info@fıstıkezmecim.com" className="p__opensans">info@fıstıkezmecim.com</a>
+      <img src={images.Logo2} alt="logo" className="logo2" />
+
     </div>
-    <div className="footer__bottom">
-        <div className="footer__logo">
-          <Logo/>
-      </div>
-        <div className="footer__copyright">
+        
+        
+        
+          <div className="logo-section">  
+          <p className="p__opensans2">web design</p>
+             <p>|</p>
+             <a href="https://www.linkedin.com/in/mete-han-%C3%A7etiner-3534431a8/"target="_blank">
+  <img src={images.logo3} alt="logo" className="logo" />
+</a>
+         
+      
+    <div className="footer__copyright-logo">
           <p className="p__opensans2">© JustNut, 2023</p>
-      </div>
-    </div>
+          </div>
+          </div>
   </div>
 );
 
