@@ -20,12 +20,11 @@ const Footer = () => (
         
           <div className="logo-section">  
           <p className="p__opensans2">web design</p>
-             <p>|</p>
+             <div className='img'>
              <a href="https://www.linkedin.com/in/mete-han-%C3%A7etiner-3534431a8/"target="_blank">
   <img src={images.logo3} alt="logo" className="logo" />
 </a>
-         
-      
+</div>
     <div className="footer__copyright-logo">
           <p className="p__opensans2">© JustNut, 2023</p>
           </div>

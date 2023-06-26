@@ -56,12 +56,14 @@
   display: flex;
   flex-wrap: wrap;
   color: #999;
-  gap: 5px; /* gap değerini küçülttük */
 }
 
-.logo {
+.img {
   display: flex; /* logo'ya flex özelliğini ekledik */
-  width: 6%;
+  width: 20%;
+}
+.img img{
+  width: 50%;
 }
 
 .footer__copyright-logo  {
@@ -69,3 +71,5 @@
   align-items: center;
   margin-left: auto;
 }
+
+
