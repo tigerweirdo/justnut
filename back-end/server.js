@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors()); // CORS'un uygulanmasını sağlar.
 
-const port = 3000;
+const port = 5000;
 
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
