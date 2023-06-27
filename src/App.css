@@ -4,6 +4,7 @@
       background-position: center center;
       background-repeat:repeat; 
       background-attachment: scroll;
+      overflow-x: hidden;
 }
 
 @media (max-width: 600px) {

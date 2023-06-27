@@ -6,7 +6,8 @@
   justify-content: flex-start;
   height: 100%;
   background-color:var(--color-black);
-  padding: 20px;
+  padding: 5px;
+ 
 }
 
 .footer__top {
@@ -18,7 +19,7 @@
   padding: 20px 0;
 }
 .logo2{
-  width: 7%;
+  width: 4%;
 }
 
 
@@ -60,10 +61,10 @@
 
 .img {
   display: flex; /* logo'ya flex özelliğini ekledik */
-  width: 20%;
+  width: 6%;
 }
 .img img{
-  width: 50%;
+  width: 100%;
 }
 
 .footer__copyright-logo  {
@@ -73,3 +74,18 @@
 }
 
 
+@media (max-width: 600px) {
+  .footer__copyright-logo {
+    flex-direction: column; /* Bu, logo ve metni dikey hizalama yapar */
+    justify-content: center; /* Bu, öğeleri yatay olarak merkeze hizalar */
+    text-align: center; /* Bu, metni merkeze hizalar */
+    margin-left: 0; /* Bu, marjı sıfırlar, böylece merkezleme düzgün çalışır */
+  }
+  .logo-section {
+    flex-direction: column; /* Bu, logo ve metni dikey hizalama yapar */
+    align-items: center; /* Bu, öğeleri yatay olarak merkeze hizalar */
+  }
+  .img {
+    display: flex; /* logo'ya flex özelliğini ekledik */
+    width: 12%;}
+}
